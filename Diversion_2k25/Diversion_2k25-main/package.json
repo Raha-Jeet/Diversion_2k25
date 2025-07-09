@@ -1,0 +1,31 @@
+{
+  "name": "diversion_2k25",
+  "version": "1.0.0",
+  "description": "Trusted Freelancing Website designed using Web3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx truffle compile",
+    "copy-contracts": "xcopy build\\contracts client\\src\\contracts /E /Y",
+    "postcompile": "npm run copy-contracts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "diversion_2k25"
+  },
+  "author": "Subhraneel Saha, Sourajit Mukherjee, Jeet Raha, Arka Gain",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "mongodb": "^6.13.1",
+    "web3": "^4.16.0"
+  },
+  "devDependencies": {
+    "ncp": "^2.0.0"
+  }
+}
